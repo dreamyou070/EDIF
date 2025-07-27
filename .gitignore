@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.pyd
+*.pyo
+
+# Virtual Environment
+venv*/
+.venv/
+env/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# PyTorch Lightning or Huggingface checkpoints
+*.ckpt
+*.pth
+*.pt
+*.bin
+*.safetensors
+
+# Logs & outputs
+*.log
+*.out
+*.err
+*.tmp
+*.tensorboard
+*.tfevents*
+
+# Cache
+.cache/
+*.cache/
+*.npz
+*.npy
+
+# Hugging Face & Transformers
+huggingface/
+~/.cache/huggingface/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+*.swp
+*~
+
