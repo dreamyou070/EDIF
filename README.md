@@ -18,7 +18,7 @@ It introduces two novel feedback modules:
 ## 🧠 Key Idea
 
 <p align="center">
-  <img src="figures/figure_1_2.png" width="600"/>
+  <img src="./figures/figure_1_2.png" width="600"/>
 </p>
 
 *EDIF leverages feedback from \textbf{Edif-S} and \textbf{Edif-E} to ensure structure-preserving yet instruction-faithful edits. The left image fails to reflect the instruction, while the right image (guided by EDIF) successfully transforms the scene.*
