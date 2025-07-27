@@ -1,36 +1,36 @@
 # EDIF: Feedback-Driven Structure-Preserving Image Editing
 
-> Official repository for the paper:  
+> Official implementation of the paper:  
 > **EDIF: Feedback-Driven Structure-Preserving Image Editing**  
-> Chanhum Park et al., 2025  
-> 📄 [Paper (PDF)](link-to-pdf)  
-> 📥 Coming soon: [Project Page](#), [Demo](#), [Colab](#)
 
 ---
 
-## 🌟 Overview
+## 🌄 Overview
 
-**EDIF** (Editing via Dynamic Interactive Feedback) is a feedback-driven framework for text-based image editing that achieves a strong balance between **structural preservation** and **semantic fidelity**.  
-It introduces two novel components:
-- **Edif-S**: A structure-aware module guided by SSIM-based feedback
-- **Edif-E**: A semantic feedback module using VLM-based alignment signals
+**EDIF** is a feedback-driven framework for text-based image editing that enables both structural preservation and semantic fidelity.  
+It introduces two novel feedback modules:
 
-Unlike prior methods, EDIF dynamically adjusts conditioning strength at each transformer block based on intermediate editing outputs.
-
----
-
-## 🎯 Key Contributions
-
-- 🔄 **Feedback Modulation**: Dynamically adjusts editing behavior using SSIM and VLM scores.
-- 🧠 **Blockwise Control**: Selective latent modulation across transformer layers.
-- 🪞 **Latent Switching**: Blends source and edited features based on structure-preserving signals.
-- 📊 Extensive evaluation on scene-centric editing benchmarks (Places365, real-world CCTV, etc.)
+- 🟩 **Edif-S**: Structure-aware module guided by SSIM feedback  
+- 🔵 **Edif-E**: Semantic-aware module based on VLM alignment
 
 ---
 
-## 🖼️ Qualitative Examples
+## 🧠 Key Idea
 
-> Add a few sample images (before & after editing, with instructions)
+<p align="center">
+  <img src="figures/figure_1_2.png" width="600"/>
+</p>
+
+*EDIF leverages feedback from \textbf{Edif-S} and \textbf{Edif-E} to ensure structure-preserving yet instruction-faithful edits. The left image fails to reflect the instruction, while the right image (guided by EDIF) successfully transforms the scene.*
+
+---
+
+## 🚀 Features
+
+- ✅ Feedback-guided editing using SSIM and VLM signals
+- 🔁 Latent switching between source and edited features
+- 📐 Blockwise condition modulation for fine-grained control
+- 🌍 Works on real-world and synthetic scenes (e.g., surveillance, outdoor)
 
 ---
 
